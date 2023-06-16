@@ -27,7 +27,7 @@ int[] l = new int[5];
         System.out.println(Arrays.toString(k));
         int[] j = Arrays.copyOfRange(k,2,4);
         System.out.println( Arrays.toString(j)  );
-            System.out.println(7777);
+
 
 
 
