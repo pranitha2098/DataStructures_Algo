@@ -14,7 +14,7 @@ int[] l = new int[5];
 
 //lookUp in array , time complexity = O(1)
 //        System.out.println(k[4]);
-//       adding a value to an index in arrray , TC = O(1)
+//       adding a value to an index in arrray , TC = O(1) O(N)
         l[0] =3;
         System.out.println(l[0]);
         //       update a value to an index in arrray , TC = O(1)
