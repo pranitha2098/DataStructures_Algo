@@ -3,7 +3,7 @@ package Arrays.ArrayList;
 
 import java.util.Arrays;
 
-public class OurArrayList<Integer> {
+public class OurArrayList {
 
     private int[] array = new int[3];
     int presentPosition;
