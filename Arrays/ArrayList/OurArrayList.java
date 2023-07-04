@@ -2,8 +2,9 @@ package Arrays.ArrayList;
 
 
 import java.util.Arrays;
+import java.util.Iterator;
 
-public class OurArrayList {
+public class OurArrayList implements Iterable<Integer> {
 
     private int[] array = new int[3];
     int presentPosition;
@@ -105,6 +106,47 @@ return Arrays.copyOfRange(narr,0,c);
                 Arrays.toString(array_final)
                 ;
     }
+
+    @Override
+    public Iterator<Integer> iterator() {
+        return new NestedIterator();
+    }
+
+//    JavaMethod
+//    public Iterator<Integer> iterator() {
+//        return Arrays.stream(Arrays.copyOfRange(array,0,presentPosition)).iterator();
+//    }
+//
+
+
+
+    class NestedIterator implements Iterator<Integer>{
+        int hasnext=0;
+
+        @Override
+        public boolean hasNext() {
+            return hasnext<presentPosition;
+        }
+
+        @Override
+        public Integer next() {
+            return array[hasnext++];
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
