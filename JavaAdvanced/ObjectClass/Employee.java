@@ -8,6 +8,9 @@ public class Employee  {
 
     Long ContactNo;
 
+    public Employee() {
+    }
+
     public Employee(String name, int id, Long contactNo) {
         this.name = name;
         this.id = id;
