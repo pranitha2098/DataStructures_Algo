@@ -14,6 +14,15 @@ public class StudentComparable implements Comparable<StudentComparable>{
 
     @Override
     public int compareTo(StudentComparable o) {
-     return o.rank - this.rank;
+     return this.rank - o.rank;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", rank=" + rank
+               ;
     }
 }

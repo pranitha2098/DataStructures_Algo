@@ -17,7 +17,8 @@ public class Main {
         s.add(new Employee("pranitha2",4,87777L));
         System.out.println(s);
 
+DealingWidNumbers k = new DealingWidNumbers();
 
-
+        System.out.println(k.add(3.9,888));
     }
 }
